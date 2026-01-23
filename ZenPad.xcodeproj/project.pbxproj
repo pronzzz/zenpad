@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043ECFEB99C0C07B3F5D6619 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */; };
+		04F769038F9FCCB8EB1133A8 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350C12331350B1BD854342F /* TemplateManager.swift */; };
+		0684DC8E7F8293C282A173B8 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63595EBAF7138E055C972947 /* MenuBarController.swift */; };
+		0AEDE23C850ED60B5789685F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBAFC5FC3D66F17F6749397 /* ContentView.swift */; };
+		0DB301C96D2A9401059B80AD /* DocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611830D4BD3357F6951D918 /* DocumentManager.swift */; };
+		20261270B9E7C3F7A0C4C24A /* FocusModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51748107F1C19A40545268F /* FocusModeView.swift */; };
+		258668D34BC89E27A373A2C4 /* AIAssistantPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */; };
+		25A1B1D3D163B6693147AC1A /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D7F620EB5BA45B2162166 /* ExportService.swift */; };
+		275AE38A58A34FD0563F35F4 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69930E03E741043D1342C2A8 /* PreferencesView.swift */; };
+		2C7397C46959A1CAA1BDFF5E /* MarkdownPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */; };
+		30B4378FA8A4DB32FD1C0D3C /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */; };
+		32B8A3F2566C8EFDFD48AC1B /* CodeToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C0E3013BB29BA65177703 /* CodeToolbar.swift */; };
+		334ED55E781CBE2DCFD38907 /* CodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760097367047DA4FD2A7D22E /* CodeEditorView.swift */; };
+		3A4254FEB14E8C5F3083463B /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */; };
+		426E7E4150B740BC8FA789BB /* DocumentOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */; };
+		4B0565D173A14F45354F42B9 /* TextStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */; };
+		650C8986BA08248267652EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */; };
+		68CA6E919F30AABBD0299C90 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905EC00A07024D8ABAD647B9 /* EditorView.swift */; };
+		80B571A97B49A74D79F338C7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201192C9EAED930E1E8837B /* Document.swift */; };
+		83E7E6E3EE6D64E2DA8C7BA7 /* AIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */; };
+		85181F2ACFD520659F495814 /* ZenPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DABD548C31B4C287A573 /* ZenPadTests.swift */; };
+		8594AEABAF9F9FA4572146E1 /* AutoSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */; };
+		88E68A8EFCE7FEF61A8F970F /* SpotlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED50B9A278DF4FE33A668 /* SpotlightService.swift */; };
+		940ACFA75EAF81F22A69C0E7 /* SystemIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */; };
+		98298FBEB2D5A00851AE9046 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B537B814AC0175DEF5C8737 /* FileService.swift */; };
+		A0AB0FF5728FE45AED6A46C3 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06334013EC4F68557FFAB09C /* CloudSyncService.swift */; };
+		B1F5695E9BAA46587DAFD1EB /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */; };
+		CFB9CDC7D03059E08A13E07A /* SnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64561A96B113232DE22AF0A2 /* SnippetManager.swift */; };
+		D6C68FE6BF9880717F50F186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8936315CA9CBA479866FC652 /* Assets.xcassets */; };
+		F60EF7926F5D215B2E273A51 /* ZenPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */; };
+		FDBE11AC68E69C91F68D00D5 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3927741F1A754AC3541A6E /* Preferences.swift */; };
+		FE4A186317300CC347F40E84 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BCF5B76E55B852732EDF4 /* TabBarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1FE4545D32E6BA5C9F78A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 897F7B4A47217D842D31E795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74BBB71298BA21A36579C980;
+			remoteInfo = ZenPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0611830D4BD3357F6951D918 /* DocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentManager.swift; sourceTree = "<group>"; };
+		06334013EC4F68557FFAB09C /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		1350C12331350B1BD854342F /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
+		190D7F620EB5BA45B2162166 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		3C3927741F1A754AC3541A6E /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIntegration.swift; sourceTree = "<group>"; };
+		3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenPadApp.swift; sourceTree = "<group>"; };
+		583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIComponents.swift; sourceTree = "<group>"; };
+		5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantPanel.swift; sourceTree = "<group>"; };
+		5B537B814AC0175DEF5C8737 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		63595EBAF7138E055C972947 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		64561A96B113232DE22AF0A2 /* SnippetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetManager.swift; sourceTree = "<group>"; };
+		69930E03E741043D1342C2A8 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		753ED50B9A278DF4FE33A668 /* SpotlightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightService.swift; sourceTree = "<group>"; };
+		760097367047DA4FD2A7D22E /* CodeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorView.swift; sourceTree = "<group>"; };
+		86A9B207588A808D5E598D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		873C0E3013BB29BA65177703 /* CodeToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToolbar.swift; sourceTree = "<group>"; };
+		87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentOutlineView.swift; sourceTree = "<group>"; };
+		8936315CA9CBA479866FC652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
+		905EC00A07024D8ABAD647B9 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSaveService.swift; sourceTree = "<group>"; };
+		A18BCF5B76E55B852732EDF4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A51748107F1C19A40545268F /* FocusModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeView.swift; sourceTree = "<group>"; };
+		AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownPreviewView.swift; sourceTree = "<group>"; };
+		B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B206DABD548C31B4C287A573 /* ZenPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenPadTests.swift; sourceTree = "<group>"; };
+		B493FF8BBCD1A58088D324A1 /* ZenPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStatistics.swift; sourceTree = "<group>"; };
+		DDBAFC5FC3D66F17F6749397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E201192C9EAED930E1E8837B /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		FADD237635A567E800269B51 /* ZenPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09899F5302BD7769EB783001 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3C3927741F1A754AC3541A6E /* Preferences.swift */,
+				D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2BD330C55D22216457CDA197 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */,
+				583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */,
+				760097367047DA4FD2A7D22E /* CodeEditorView.swift */,
+				873C0E3013BB29BA65177703 /* CodeToolbar.swift */,
+				DDBAFC5FC3D66F17F6749397 /* ContentView.swift */,
+				87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */,
+				905EC00A07024D8ABAD647B9 /* EditorView.swift */,
+				A51748107F1C19A40545268F /* FocusModeView.swift */,
+				AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */,
+				63595EBAF7138E055C972947 /* MenuBarController.swift */,
+				69930E03E741043D1342C2A8 /* PreferencesView.swift */,
+				72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */,
+				0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */,
+				A18BCF5B76E55B852732EDF4 /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EC2E731C63F3B49421DC3B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E201192C9EAED930E1E8837B /* Document.swift */,
+				0611830D4BD3357F6951D918 /* DocumentManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B011B6BE2C752BC2C192ED9 = {
+			isa = PBXGroup;
+			children = (
+				C2EBF03E2BEBD7C312701CC5 /* ZenPad */,
+				3ED7D78B8ADFAD084AB7F7A2 /* ZenPadTests */,
+				6328E147AB4B87043E98D32F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ED7D78B8ADFAD084AB7F7A2 /* ZenPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				B206DABD548C31B4C287A573 /* ZenPadTests.swift */,
+			);
+			path = ZenPadTests;
+			sourceTree = "<group>";
+		};
+		6328E147AB4B87043E98D32F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B493FF8BBCD1A58088D324A1 /* ZenPad.app */,
+				FADD237635A567E800269B51 /* ZenPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73D7A84069C89CED29F5C110 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8936315CA9CBA479866FC652 /* Assets.xcassets */,
+				86A9B207588A808D5E598D78 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		909B6C9ABBE9801286C468C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */,
+				3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A2F7B4A398D01C8011ACD117 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */,
+				99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */,
+				06334013EC4F68557FFAB09C /* CloudSyncService.swift */,
+				190D7F620EB5BA45B2162166 /* ExportService.swift */,
+				5B537B814AC0175DEF5C8737 /* FileService.swift */,
+				64561A96B113232DE22AF0A2 /* SnippetManager.swift */,
+				753ED50B9A278DF4FE33A668 /* SpotlightService.swift */,
+				8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */,
+				3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */,
+				1350C12331350B1BD854342F /* TemplateManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C2EBF03E2BEBD7C312701CC5 /* ZenPad */ = {
+			isa = PBXGroup;
+			children = (
+				909B6C9ABBE9801286C468C8 /* App */,
+				C978CA9EC02CBD3758EFB09A /* Extensions */,
+				2EC2E731C63F3B49421DC3B4 /* Models */,
+				73D7A84069C89CED29F5C110 /* Resources */,
+				A2F7B4A398D01C8011ACD117 /* Services */,
+				09899F5302BD7769EB783001 /* Utilities */,
+				2BD330C55D22216457CDA197 /* Views */,
+			);
+			path = ZenPad;
+			sourceTree = "<group>";
+		};
+		C978CA9EC02CBD3758EFB09A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74BBB71298BA21A36579C980 /* ZenPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC18F6B8148DAA6ECE8F3DD /* Build configuration list for PBXNativeTarget "ZenPad" */;
+			buildPhases = (
+				3E4E0FFF43E9CA04DE42CFB4 /* Sources */,
+				7B87663DCCA1EE6F6198A760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZenPad;
+			packageProductDependencies = (
+			);
+			productName = ZenPad;
+			productReference = B493FF8BBCD1A58088D324A1 /* ZenPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD290DD873A8AC3511CDB19D /* ZenPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9762B10A40D361AD859AFC29 /* Build configuration list for PBXNativeTarget "ZenPadTests" */;
+			buildPhases = (
+				0DFFBE94F6420AA3C0674FE7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5105775CDA816EDB1CA0967A /* PBXTargetDependency */,
+			);
+			name = ZenPadTests;
+			packageProductDependencies = (
+			);
+			productName = ZenPadTests;
+			productReference = FADD237635A567E800269B51 /* ZenPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		897F7B4A47217D842D31E795 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					74BBB71298BA21A36579C980 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					DD290DD873A8AC3511CDB19D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = BD2F5EC66F8F1198EE4E3E02 /* Build configuration list for PBXProject "ZenPad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3B011B6BE2C752BC2C192ED9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74BBB71298BA21A36579C980 /* ZenPad */,
+				DD290DD873A8AC3511CDB19D /* ZenPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B87663DCCA1EE6F6198A760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C68FE6BF9880717F50F186 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DFFBE94F6420AA3C0674FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85181F2ACFD520659F495814 /* ZenPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4E0FFF43E9CA04DE42CFB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258668D34BC89E27A373A2C4 /* AIAssistantPanel.swift in Sources */,
+				83E7E6E3EE6D64E2DA8C7BA7 /* AIComponents.swift in Sources */,
+				3A4254FEB14E8C5F3083463B /* AIService.swift in Sources */,
+				650C8986BA08248267652EE6 /* AppDelegate.swift in Sources */,
+				8594AEABAF9F9FA4572146E1 /* AutoSaveService.swift in Sources */,
+				A0AB0FF5728FE45AED6A46C3 /* CloudSyncService.swift in Sources */,
+				334ED55E781CBE2DCFD38907 /* CodeEditorView.swift in Sources */,
+				32B8A3F2566C8EFDFD48AC1B /* CodeToolbar.swift in Sources */,
+				0AEDE23C850ED60B5789685F /* ContentView.swift in Sources */,
+				80B571A97B49A74D79F338C7 /* Document.swift in Sources */,
+				0DB301C96D2A9401059B80AD /* DocumentManager.swift in Sources */,
+				426E7E4150B740BC8FA789BB /* DocumentOutlineView.swift in Sources */,
+				68CA6E919F30AABBD0299C90 /* EditorView.swift in Sources */,
+				25A1B1D3D163B6693147AC1A /* ExportService.swift in Sources */,
+				98298FBEB2D5A00851AE9046 /* FileService.swift in Sources */,
+				20261270B9E7C3F7A0C4C24A /* FocusModeView.swift in Sources */,
+				2C7397C46959A1CAA1BDFF5E /* MarkdownPreviewView.swift in Sources */,
+				0684DC8E7F8293C282A173B8 /* MenuBarController.swift in Sources */,
+				FDBE11AC68E69C91F68D00D5 /* Preferences.swift in Sources */,
+				275AE38A58A34FD0563F35F4 /* PreferencesView.swift in Sources */,
+				043ECFEB99C0C07B3F5D6619 /* SearchBarView.swift in Sources */,
+				CFB9CDC7D03059E08A13E07A /* SnippetManager.swift in Sources */,
+				88E68A8EFCE7FEF61A8F970F /* SpotlightService.swift in Sources */,
+				B1F5695E9BAA46587DAFD1EB /* StatusBarView.swift in Sources */,
+				30B4378FA8A4DB32FD1C0D3C /* SyntaxHighlighter.swift in Sources */,
+				940ACFA75EAF81F22A69C0E7 /* SystemIntegration.swift in Sources */,
+				FE4A186317300CC347F40E84 /* TabBarView.swift in Sources */,
+				04F769038F9FCCB8EB1133A8 /* TemplateManager.swift in Sources */,
+				4B0565D173A14F45354F42B9 /* TextStatistics.swift in Sources */,
+				F60EF7926F5D215B2E273A51 /* ZenPadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5105775CDA816EDB1CA0967A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74BBB71298BA21A36579C980 /* ZenPad */;
+			targetProxy = E1FE4545D32E6BA5C9F78A17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05EBAC42475A4DEE8E1B14B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenPad.app/Contents/MacOS/ZenPad";
+			};
+			name = Debug;
+		};
+		16DD6BF2434B9FA7B921E4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		3C5BD0509006AAFE8259F835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenPad.app/Contents/MacOS/ZenPad";
+			};
+			name = Release;
+		};
+		8B2ECB3FA2E2F21E65265F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		F1E45B4E5C8EB81115E651F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZenPad/Resources/ZenPad.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZenPad/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.app;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC0D5AC970E1385264DA8510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZenPad/Resources/ZenPad.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ZenPad/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.app;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9762B10A40D361AD859AFC29 /* Build configuration list for PBXNativeTarget "ZenPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EBAC42475A4DEE8E1B14B7 /* Debug */,
+				3C5BD0509006AAFE8259F835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD2F5EC66F8F1198EE4E3E02 /* Build configuration list for PBXProject "ZenPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16DD6BF2434B9FA7B921E4F9 /* Debug */,
+				8B2ECB3FA2E2F21E65265F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFC18F6B8148DAA6ECE8F3DD /* Build configuration list for PBXNativeTarget "ZenPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E45B4E5C8EB81115E651F3 /* Debug */,
+				FC0D5AC970E1385264DA8510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 897F7B4A47217D842D31E795 /* Project object */;
+}

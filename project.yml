@@ -1,0 +1,76 @@
+name: ZenPad
+options:
+  bundleIdPrefix: com.zenpad
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+
+targets:
+  ZenPad:
+    type: application
+    platform: macOS
+    sources:
+      - path: ZenPad
+        excludes:
+          - "**/*.entitlements"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zenpad.app
+        INFOPLIST_FILE: ZenPad/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: ZenPad/Resources/ZenPad.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        COMBINE_HIDPI_IMAGES: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+    entitlements:
+      path: ZenPad/Resources/ZenPad.entitlements
+
+  ZenPadTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: ZenPadTests
+    dependencies:
+      - target: ZenPad
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zenpad.tests
+
+schemes:
+  ZenPad:
+    build:
+      targets:
+        ZenPad: all
+    run:
+      config: Debug
+      commandLineArguments:
+        "-ApplePersistenceIgnoreState": true
+    test:
+      config: Debug
+      targets:
+        - ZenPadTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
