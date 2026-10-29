@@ -2,18 +2,27 @@ name: ZenPad
 options:
   bundleIdPrefix: com.zenpad
   deploymentTarget:
-    macOS: "13.0"
-  xcodeVersion: "15.0"
-  generateEmptyDirectories: true
+    macOS: "14.0"
+  createIntermediateGroups: true
   groupSortPosition: top
+
+packages:
+  Markdown:
+    url: https://github.com/swiftlang/swift-markdown
+    from: 0.7.0
 
 settings:
   base:
-    SWIFT_VERSION: "5.9"
-    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    SWIFT_VERSION: "5.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MARKETING_VERSION: "2.0.0"
+    CURRENT_PROJECT_VERSION: "2"
     DEVELOPMENT_TEAM: ""
     CODE_SIGN_IDENTITY: "-"
     CODE_SIGN_STYLE: Manual
+    DEAD_CODE_STRIPPING: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
 
 targets:
   ZenPad:
@@ -21,28 +30,18 @@ targets:
     platform: macOS
     sources:
       - path: ZenPad
-        excludes:
-          - "**/*.entitlements"
+    dependencies:
+      - package: Markdown
     settings:
       base:
+        PRODUCT_NAME: ZenPad
         PRODUCT_BUNDLE_IDENTIFIER: com.zenpad.app
         INFOPLIST_FILE: ZenPad/Resources/Info.plist
         CODE_SIGN_ENTITLEMENTS: ZenPad/Resources/ZenPad.entitlements
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        COMBINE_HIDPI_IMAGES: YES
         ENABLE_HARDENED_RUNTIME: YES
-        LD_RUNPATH_SEARCH_PATHS:
-          - "$(inherited)"
-          - "@executable_path/../Frameworks"
-        SWIFT_OPTIMIZATION_LEVEL: "-O"
-      configs:
-        Debug:
-          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
-        Release:
-          SWIFT_OPTIMIZATION_LEVEL: "-O"
-    entitlements:
-      path: ZenPad/Resources/ZenPad.entitlements
+        COMBINE_HIDPI_IMAGES: YES
 
   ZenPadTests:
     type: bundle.unit-test
@@ -54,6 +53,9 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zenpad.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/ZenPad.app/Contents/MacOS/ZenPad"
+        BUNDLE_LOADER: "$(TEST_HOST)"
 
 schemes:
   ZenPad:
@@ -62,15 +64,11 @@ schemes:
         ZenPad: all
     run:
       config: Debug
-      commandLineArguments:
-        "-ApplePersistenceIgnoreState": true
     test:
       config: Debug
       targets:
         - ZenPadTests
     profile:
       config: Release
-    analyze:
-      config: Debug
     archive:
       config: Release

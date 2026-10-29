@@ -7,38 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043ECFEB99C0C07B3F5D6619 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */; };
-		04F769038F9FCCB8EB1133A8 /* TemplateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350C12331350B1BD854342F /* TemplateManager.swift */; };
-		0684DC8E7F8293C282A173B8 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63595EBAF7138E055C972947 /* MenuBarController.swift */; };
-		0AEDE23C850ED60B5789685F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBAFC5FC3D66F17F6749397 /* ContentView.swift */; };
-		0DB301C96D2A9401059B80AD /* DocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0611830D4BD3357F6951D918 /* DocumentManager.swift */; };
-		20261270B9E7C3F7A0C4C24A /* FocusModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51748107F1C19A40545268F /* FocusModeView.swift */; };
-		258668D34BC89E27A373A2C4 /* AIAssistantPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */; };
-		25A1B1D3D163B6693147AC1A /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D7F620EB5BA45B2162166 /* ExportService.swift */; };
-		275AE38A58A34FD0563F35F4 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69930E03E741043D1342C2A8 /* PreferencesView.swift */; };
-		2C7397C46959A1CAA1BDFF5E /* MarkdownPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */; };
-		30B4378FA8A4DB32FD1C0D3C /* SyntaxHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */; };
-		32B8A3F2566C8EFDFD48AC1B /* CodeToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C0E3013BB29BA65177703 /* CodeToolbar.swift */; };
-		334ED55E781CBE2DCFD38907 /* CodeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760097367047DA4FD2A7D22E /* CodeEditorView.swift */; };
+		01C115171DC8F649B0CC8F44 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6644632DA28BB62476181A /* MainWindowController.swift */; };
+		0C51BEC946A1921C5BF57540 /* MarkdownStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982D76C7468896EED6C3BB6 /* MarkdownStyler.swift */; };
+		0DDC81535794AD725A2B22EF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6146E90CA78D5B8E595B33 /* Fonts.swift */; };
+		1CC1C3330F9722C7CF0821E7 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A920C91F4EA55777BD42F5 /* MarkdownRenderer.swift */; };
+		1F60CAC6AE9BAB942E200D65 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165F9C2F02BFDCB49BCC20FE /* SettingsWindowController.swift */; };
+		20136638CB02E7218522E81D /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C49B5E4C6D8258CC844295E /* SidebarView.swift */; };
+		21EED77FAF70B75130203849 /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314C34C87F8208EE96971401 /* Templates.swift */; };
+		26079007E0E59B833D6B77C3 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4560063205D60E361B99DC7 /* MainMenu.swift */; };
+		2D60F70EF4496A5755486ADA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C036A46590E02B7095F00C /* AppModel.swift */; };
 		3A4254FEB14E8C5F3083463B /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */; };
-		426E7E4150B740BC8FA789BB /* DocumentOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */; };
-		4B0565D173A14F45354F42B9 /* TextStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */; };
+		3BC5FA789655C8CED5FF1F33 /* Hotkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A1D64A3FE5E3BCBD7FE37 /* Hotkeys.swift */; };
+		435B2DC702BF8EE5CE00768D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61168AC7C222E0C3129EA564 /* MainView.swift */; };
+		5C0F9A84315F0D8B07E2426C /* MarkdownEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486E1E58D6DBA445F8AE63E /* MarkdownEditing.swift */; };
+		60A9A7839B0B826A51211D8C /* SettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AD2DDFCA56F1D7B912241E /* SettingsViews.swift */; };
+		6489BB77F25BCE6FE56C0378 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 0E3D6832AD154A3ADA053E5F /* Markdown */; };
 		650C8986BA08248267652EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */; };
-		68CA6E919F30AABBD0299C90 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905EC00A07024D8ABAD647B9 /* EditorView.swift */; };
-		80B571A97B49A74D79F338C7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E201192C9EAED930E1E8837B /* Document.swift */; };
-		83E7E6E3EE6D64E2DA8C7BA7 /* AIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */; };
+		7378431B2D9E760D1166C2B1 /* CodeHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4492C866A5411EC19EBFC9 /* CodeHighlighter.swift */; };
+		7F05B12742707CAB85004736 /* QuickPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711D20C9FF461880C24A84B /* QuickPadView.swift */; };
+		7F19C53A36FD91FBEA271616 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF4541ADE10B995D6EE330 /* Components.swift */; };
+		843DC64971B9F1629CE60173 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B4093B66575085B49BC9E8 /* PreviewView.swift */; };
 		85181F2ACFD520659F495814 /* ZenPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DABD548C31B4C287A573 /* ZenPadTests.swift */; };
-		8594AEABAF9F9FA4572146E1 /* AutoSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */; };
-		88E68A8EFCE7FEF61A8F970F /* SpotlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753ED50B9A278DF4FE33A668 /* SpotlightService.swift */; };
-		940ACFA75EAF81F22A69C0E7 /* SystemIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */; };
-		98298FBEB2D5A00851AE9046 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B537B814AC0175DEF5C8737 /* FileService.swift */; };
-		A0AB0FF5728FE45AED6A46C3 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06334013EC4F68557FFAB09C /* CloudSyncService.swift */; };
-		B1F5695E9BAA46587DAFD1EB /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */; };
-		CFB9CDC7D03059E08A13E07A /* SnippetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64561A96B113232DE22AF0A2 /* SnippetManager.swift */; };
+		93AAB6B247B4A84001BA66A4 /* QuickPadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B409834BAEB61E27995F28 /* QuickPadController.swift */; };
+		9937CEE0FEAF07C869F893D6 /* EditorSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA610050BF2341B2A30B78F2 /* EditorSession.swift */; };
+		9A98C875EE89AFBC96C06A5E /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B207DAECC733EA210BF4C0 /* Updater.swift */; };
+		9CC6040619053B5469308C51 /* StylerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E528B7AE9BC0ECD7F19F1AA3 /* StylerTests.swift */; };
+		9E314DB5157C5796D27808A1 /* ZenTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6549F1D0A6F19769B2C4A40 /* ZenTextView.swift */; };
+		A0A597830718BCDA4BDBA2F8 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F8FF8C02A386F442836484 /* Runtime.swift */; };
+		A7040265146C09A853957DAD /* DemoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A39473FD245762DB9BD3BE /* DemoContent.swift */; };
+		AFEF5E8BFC3745F6E9A1C281 /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925276ECB27E4F705D11562E /* StatusItemController.swift */; };
+		B0259D6ED9E5445CBB79F468 /* PreviewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92715F2C0B780FB53FB6D2 /* PreviewStyle.swift */; };
+		B14EE8203D7AA37570876EC1 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF0A42ACAC605A9251B158 /* Prefs.swift */; };
+		B3DDEF81611CCB62FBDF6CF2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FDE1A95ECE66DFC910268E /* Theme.swift */; };
+		C05464136237FC30F54AA8E2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB41FE04BFE05746154DD2E /* main.swift */; };
+		C78DE23E762A7EDB3A09F618 /* UpdateWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8048263F2A315EF88640DA /* UpdateWindow.swift */; };
+		CE128AF9C64D4FCED6B862B4 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D0A13B9DED71AFE6347286 /* Exporter.swift */; };
+		D356DFABB4AE2A5E4D4A1E43 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62751D9E57714D97CC4F357 /* EditorView.swift */; };
+		D4F593BAC72F78DE77BD624E /* TemplatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C4FC5F16E29EF77AE4C16 /* TemplatePicker.swift */; };
 		D6C68FE6BF9880717F50F186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8936315CA9CBA479866FC652 /* Assets.xcassets */; };
-		F60EF7926F5D215B2E273A51 /* ZenPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */; };
-		FDBE11AC68E69C91F68D00D5 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3927741F1A754AC3541A6E /* Preferences.swift */; };
-		FE4A186317300CC347F40E84 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BCF5B76E55B852732EDF4 /* TabBarView.swift */; };
+		F3B08114A0F4749E09BDF496 /* AIPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7999DE3FA6C51C44A90D3D91 /* AIPanel.swift */; };
+		FB2A08CEB07AF26005DF65F3 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F13E5069C5D1D7CFCE32D1 /* Library.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,81 +60,80 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0611830D4BD3357F6951D918 /* DocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentManager.swift; sourceTree = "<group>"; };
-		06334013EC4F68557FFAB09C /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
-		0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
-		1350C12331350B1BD854342F /* TemplateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateManager.swift; sourceTree = "<group>"; };
-		190D7F620EB5BA45B2162166 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
-		3C3927741F1A754AC3541A6E /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIntegration.swift; sourceTree = "<group>"; };
-		3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenPadApp.swift; sourceTree = "<group>"; };
-		583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIComponents.swift; sourceTree = "<group>"; };
-		5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantPanel.swift; sourceTree = "<group>"; };
-		5B537B814AC0175DEF5C8737 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
-		63595EBAF7138E055C972947 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
-		64561A96B113232DE22AF0A2 /* SnippetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetManager.swift; sourceTree = "<group>"; };
-		69930E03E741043D1342C2A8 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		753ED50B9A278DF4FE33A668 /* SpotlightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightService.swift; sourceTree = "<group>"; };
-		760097367047DA4FD2A7D22E /* CodeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditorView.swift; sourceTree = "<group>"; };
+		01EF4541ADE10B995D6EE330 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		0486E1E58D6DBA445F8AE63E /* MarkdownEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownEditing.swift; sourceTree = "<group>"; };
+		0C49B5E4C6D8258CC844295E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		0E6644632DA28BB62476181A /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		165F9C2F02BFDCB49BCC20FE /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		20F13E5069C5D1D7CFCE32D1 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		239C4FC5F16E29EF77AE4C16 /* TemplatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePicker.swift; sourceTree = "<group>"; };
+		25F8FF8C02A386F442836484 /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
+		314C34C87F8208EE96971401 /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
+		41B207DAECC733EA210BF4C0 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		49A920C91F4EA55777BD42F5 /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		49FDE1A95ECE66DFC910268E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		60EF0A42ACAC605A9251B158 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		61168AC7C222E0C3129EA564 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6F4492C866A5411EC19EBFC9 /* CodeHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeHighlighter.swift; sourceTree = "<group>"; };
+		7711D20C9FF461880C24A84B /* QuickPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPadView.swift; sourceTree = "<group>"; };
+		78B4093B66575085B49BC9E8 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		7999DE3FA6C51C44A90D3D91 /* AIPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPanel.swift; sourceTree = "<group>"; };
+		7B09962C5DC20932EA38433E /* ZenPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZenPad.entitlements; sourceTree = "<group>"; };
 		86A9B207588A808D5E598D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		873C0E3013BB29BA65177703 /* CodeToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToolbar.swift; sourceTree = "<group>"; };
-		87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentOutlineView.swift; sourceTree = "<group>"; };
 		8936315CA9CBA479866FC652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxHighlighter.swift; sourceTree = "<group>"; };
-		905EC00A07024D8ABAD647B9 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
-		99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSaveService.swift; sourceTree = "<group>"; };
-		A18BCF5B76E55B852732EDF4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		A51748107F1C19A40545268F /* FocusModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModeView.swift; sourceTree = "<group>"; };
-		AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownPreviewView.swift; sourceTree = "<group>"; };
+		8F8048263F2A315EF88640DA /* UpdateWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWindow.swift; sourceTree = "<group>"; };
+		925276ECB27E4F705D11562E /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		93D0A13B9DED71AFE6347286 /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		9982D76C7468896EED6C3BB6 /* MarkdownStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownStyler.swift; sourceTree = "<group>"; };
+		AA610050BF2341B2A30B78F2 /* EditorSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSession.swift; sourceTree = "<group>"; };
+		AA6146E90CA78D5B8E595B33 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		B0AD2DDFCA56F1D7B912241E /* SettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViews.swift; sourceTree = "<group>"; };
 		B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B206DABD548C31B4C287A573 /* ZenPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenPadTests.swift; sourceTree = "<group>"; };
+		B3A39473FD245762DB9BD3BE /* DemoContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoContent.swift; sourceTree = "<group>"; };
+		B40A1D64A3FE5E3BCBD7FE37 /* Hotkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotkeys.swift; sourceTree = "<group>"; };
 		B493FF8BBCD1A58088D324A1 /* ZenPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6549F1D0A6F19769B2C4A40 /* ZenTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenTextView.swift; sourceTree = "<group>"; };
 		BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
-		D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStatistics.swift; sourceTree = "<group>"; };
-		DDBAFC5FC3D66F17F6749397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E201192C9EAED930E1E8837B /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		C62751D9E57714D97CC4F357 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		D4560063205D60E361B99DC7 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		DBB41FE04BFE05746154DD2E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E4B409834BAEB61E27995F28 /* QuickPadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPadController.swift; sourceTree = "<group>"; };
+		E528B7AE9BC0ECD7F19F1AA3 /* StylerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylerTests.swift; sourceTree = "<group>"; };
+		EA92715F2C0B780FB53FB6D2 /* PreviewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStyle.swift; sourceTree = "<group>"; };
+		F4C036A46590E02B7095F00C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		FADD237635A567E800269B51 /* ZenPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
-		09899F5302BD7769EB783001 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				3C3927741F1A754AC3541A6E /* Preferences.swift */,
-				D3465EFA858CFE9AB53BDFF8 /* TextStatistics.swift */,
+/* Begin PBXFrameworksBuildPhase section */
+		22EFFE8BD529DA279A9870EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6489BB77F25BCE6FE56C0378 /* Markdown in Frameworks */,
 			);
-			path = Utilities;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
 		2BD330C55D22216457CDA197 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5AA5CC92D06562F6D433A54D /* AIAssistantPanel.swift */,
-				583CA09FA5B3CA5A6602BC26 /* AIComponents.swift */,
-				760097367047DA4FD2A7D22E /* CodeEditorView.swift */,
-				873C0E3013BB29BA65177703 /* CodeToolbar.swift */,
-				DDBAFC5FC3D66F17F6749397 /* ContentView.swift */,
-				87939F7BBF049CB173A9F5DD /* DocumentOutlineView.swift */,
-				905EC00A07024D8ABAD647B9 /* EditorView.swift */,
-				A51748107F1C19A40545268F /* FocusModeView.swift */,
-				AB4E3BDD30F243B0D1DE351A /* MarkdownPreviewView.swift */,
-				63595EBAF7138E055C972947 /* MenuBarController.swift */,
-				69930E03E741043D1342C2A8 /* PreferencesView.swift */,
-				72F0061DDB8C9D63ADBE4AE7 /* SearchBarView.swift */,
-				0D234758CAD8246A1E4FCB59 /* StatusBarView.swift */,
-				A18BCF5B76E55B852732EDF4 /* TabBarView.swift */,
+				8205E88ADC76D668A74C9C57 /* Main */,
+				E12E6C38147B4CA041DC6963 /* QuickPad */,
+				DF0770D5238B4686B7E8FCA5 /* Settings */,
+				333A1233B9E5E84DFB907E27 /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2EC2E731C63F3B49421DC3B4 /* Models */ = {
+		333A1233B9E5E84DFB907E27 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E201192C9EAED930E1E8837B /* Document.swift */,
-				0611830D4BD3357F6951D918 /* DocumentManager.swift */,
+				01EF4541ADE10B995D6EE330 /* Components.swift */,
 			);
-			path = Models;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		3B011B6BE2C752BC2C192ED9 = {
@@ -141,9 +148,22 @@
 		3ED7D78B8ADFAD084AB7F7A2 /* ZenPadTests */ = {
 			isa = PBXGroup;
 			children = (
+				E528B7AE9BC0ECD7F19F1AA3 /* StylerTests.swift */,
 				B206DABD548C31B4C287A573 /* ZenPadTests.swift */,
 			);
 			path = ZenPadTests;
+			sourceTree = "<group>";
+		};
+		527F10D9F39BBAADD06C09F9 /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				6F4492C866A5411EC19EBFC9 /* CodeHighlighter.swift */,
+				0486E1E58D6DBA445F8AE63E /* MarkdownEditing.swift */,
+				49A920C91F4EA55777BD42F5 /* MarkdownRenderer.swift */,
+				9982D76C7468896EED6C3BB6 /* MarkdownStyler.swift */,
+				EA92715F2C0B780FB53FB6D2 /* PreviewStyle.swift */,
+			);
+			path = Markdown;
 			sourceTree = "<group>";
 		};
 		6328E147AB4B87043E98D32F /* Products */ = {
@@ -160,15 +180,31 @@
 			children = (
 				8936315CA9CBA479866FC652 /* Assets.xcassets */,
 				86A9B207588A808D5E598D78 /* Info.plist */,
+				7B09962C5DC20932EA38433E /* ZenPad.entitlements */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8205E88ADC76D668A74C9C57 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7999DE3FA6C51C44A90D3D91 /* AIPanel.swift */,
+				61168AC7C222E0C3129EA564 /* MainView.swift */,
+				0C49B5E4C6D8258CC844295E /* SidebarView.swift */,
+				239C4FC5F16E29EF77AE4C16 /* TemplatePicker.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		909B6C9ABBE9801286C468C8 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				B0C841C319A0BDB015FC0CFD /* AppDelegate.swift */,
-				3EDC3422D3728B58215CFFCD /* ZenPadApp.swift */,
+				B3A39473FD245762DB9BD3BE /* DemoContent.swift */,
+				DBB41FE04BFE05746154DD2E /* main.swift */,
+				D4560063205D60E361B99DC7 /* MainMenu.swift */,
+				0E6644632DA28BB62476181A /* MainWindowController.swift */,
+				925276ECB27E4F705D11562E /* StatusItemController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -177,38 +213,69 @@
 			isa = PBXGroup;
 			children = (
 				BE50593F5C2EBE4D9ABCF4AC /* AIService.swift */,
-				99CEEF0177B27C33C0CE625B /* AutoSaveService.swift */,
-				06334013EC4F68557FFAB09C /* CloudSyncService.swift */,
-				190D7F620EB5BA45B2162166 /* ExportService.swift */,
-				5B537B814AC0175DEF5C8737 /* FileService.swift */,
-				64561A96B113232DE22AF0A2 /* SnippetManager.swift */,
-				753ED50B9A278DF4FE33A668 /* SpotlightService.swift */,
-				8DB86EB1C71E02EACDFB79DC /* SyntaxHighlighter.swift */,
-				3C93D396D0FB8141E3521C95 /* SystemIntegration.swift */,
-				1350C12331350B1BD854342F /* TemplateManager.swift */,
+				93D0A13B9DED71AFE6347286 /* Exporter.swift */,
+				314C34C87F8208EE96971401 /* Templates.swift */,
+				41B207DAECC733EA210BF4C0 /* Updater.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B9205F768CAE335C20235D54 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				C62751D9E57714D97CC4F357 /* EditorView.swift */,
+				78B4093B66575085B49BC9E8 /* PreviewView.swift */,
+				B6549F1D0A6F19769B2C4A40 /* ZenTextView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 		C2EBF03E2BEBD7C312701CC5 /* ZenPad */ = {
 			isa = PBXGroup;
 			children = (
 				909B6C9ABBE9801286C468C8 /* App */,
-				C978CA9EC02CBD3758EFB09A /* Extensions */,
-				2EC2E731C63F3B49421DC3B4 /* Models */,
+				FBEF4120A52C2A1CE6CC0DDE /* Core */,
+				B9205F768CAE335C20235D54 /* Editor */,
+				527F10D9F39BBAADD06C09F9 /* Markdown */,
 				73D7A84069C89CED29F5C110 /* Resources */,
 				A2F7B4A398D01C8011ACD117 /* Services */,
-				09899F5302BD7769EB783001 /* Utilities */,
 				2BD330C55D22216457CDA197 /* Views */,
 			);
 			path = ZenPad;
 			sourceTree = "<group>";
 		};
-		C978CA9EC02CBD3758EFB09A /* Extensions */ = {
+		DF0770D5238B4686B7E8FCA5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B0AD2DDFCA56F1D7B912241E /* SettingsViews.swift */,
+				165F9C2F02BFDCB49BCC20FE /* SettingsWindowController.swift */,
+				8F8048263F2A315EF88640DA /* UpdateWindow.swift */,
 			);
-			path = Extensions;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E12E6C38147B4CA041DC6963 /* QuickPad */ = {
+			isa = PBXGroup;
+			children = (
+				E4B409834BAEB61E27995F28 /* QuickPadController.swift */,
+				7711D20C9FF461880C24A84B /* QuickPadView.swift */,
+			);
+			path = QuickPad;
+			sourceTree = "<group>";
+		};
+		FBEF4120A52C2A1CE6CC0DDE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F4C036A46590E02B7095F00C /* AppModel.swift */,
+				AA610050BF2341B2A30B78F2 /* EditorSession.swift */,
+				AA6146E90CA78D5B8E595B33 /* Fonts.swift */,
+				B40A1D64A3FE5E3BCBD7FE37 /* Hotkeys.swift */,
+				20F13E5069C5D1D7CFCE32D1 /* Library.swift */,
+				60EF0A42ACAC605A9251B158 /* Prefs.swift */,
+				25F8FF8C02A386F442836484 /* Runtime.swift */,
+				49FDE1A95ECE66DFC910268E /* Theme.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +287,7 @@
 			buildPhases = (
 				3E4E0FFF43E9CA04DE42CFB4 /* Sources */,
 				7B87663DCCA1EE6F6198A760 /* Resources */,
+				22EFFE8BD529DA279A9870EB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +295,7 @@
 			);
 			name = ZenPad;
 			packageProductDependencies = (
+				0E3D6832AD154A3ADA053E5F /* Markdown */,
 			);
 			productName = ZenPad;
 			productReference = B493FF8BBCD1A58088D324A1 /* ZenPad.app */;
@@ -257,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					74BBB71298BA21A36579C980 = {
 						DevelopmentTeam = "";
@@ -270,7 +339,6 @@
 				};
 			};
 			buildConfigurationList = BD2F5EC66F8F1198EE4E3E02 /* Build configuration list for PBXProject "ZenPad" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -279,7 +347,11 @@
 			);
 			mainGroup = 3B011B6BE2C752BC2C192ED9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C13B064385174985FE0FB1D6 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+			);
 			preferredProjectObjectVersion = 77;
+			productRefGroup = 6328E147AB4B87043E98D32F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -305,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC6040619053B5469308C51 /* StylerTests.swift in Sources */,
 				85181F2ACFD520659F495814 /* ZenPadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,36 +386,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				258668D34BC89E27A373A2C4 /* AIAssistantPanel.swift in Sources */,
-				83E7E6E3EE6D64E2DA8C7BA7 /* AIComponents.swift in Sources */,
+				F3B08114A0F4749E09BDF496 /* AIPanel.swift in Sources */,
 				3A4254FEB14E8C5F3083463B /* AIService.swift in Sources */,
 				650C8986BA08248267652EE6 /* AppDelegate.swift in Sources */,
-				8594AEABAF9F9FA4572146E1 /* AutoSaveService.swift in Sources */,
-				A0AB0FF5728FE45AED6A46C3 /* CloudSyncService.swift in Sources */,
-				334ED55E781CBE2DCFD38907 /* CodeEditorView.swift in Sources */,
-				32B8A3F2566C8EFDFD48AC1B /* CodeToolbar.swift in Sources */,
-				0AEDE23C850ED60B5789685F /* ContentView.swift in Sources */,
-				80B571A97B49A74D79F338C7 /* Document.swift in Sources */,
-				0DB301C96D2A9401059B80AD /* DocumentManager.swift in Sources */,
-				426E7E4150B740BC8FA789BB /* DocumentOutlineView.swift in Sources */,
-				68CA6E919F30AABBD0299C90 /* EditorView.swift in Sources */,
-				25A1B1D3D163B6693147AC1A /* ExportService.swift in Sources */,
-				98298FBEB2D5A00851AE9046 /* FileService.swift in Sources */,
-				20261270B9E7C3F7A0C4C24A /* FocusModeView.swift in Sources */,
-				2C7397C46959A1CAA1BDFF5E /* MarkdownPreviewView.swift in Sources */,
-				0684DC8E7F8293C282A173B8 /* MenuBarController.swift in Sources */,
-				FDBE11AC68E69C91F68D00D5 /* Preferences.swift in Sources */,
-				275AE38A58A34FD0563F35F4 /* PreferencesView.swift in Sources */,
-				043ECFEB99C0C07B3F5D6619 /* SearchBarView.swift in Sources */,
-				CFB9CDC7D03059E08A13E07A /* SnippetManager.swift in Sources */,
-				88E68A8EFCE7FEF61A8F970F /* SpotlightService.swift in Sources */,
-				B1F5695E9BAA46587DAFD1EB /* StatusBarView.swift in Sources */,
-				30B4378FA8A4DB32FD1C0D3C /* SyntaxHighlighter.swift in Sources */,
-				940ACFA75EAF81F22A69C0E7 /* SystemIntegration.swift in Sources */,
-				FE4A186317300CC347F40E84 /* TabBarView.swift in Sources */,
-				04F769038F9FCCB8EB1133A8 /* TemplateManager.swift in Sources */,
-				4B0565D173A14F45354F42B9 /* TextStatistics.swift in Sources */,
-				F60EF7926F5D215B2E273A51 /* ZenPadApp.swift in Sources */,
+				2D60F70EF4496A5755486ADA /* AppModel.swift in Sources */,
+				7378431B2D9E760D1166C2B1 /* CodeHighlighter.swift in Sources */,
+				7F19C53A36FD91FBEA271616 /* Components.swift in Sources */,
+				A7040265146C09A853957DAD /* DemoContent.swift in Sources */,
+				9937CEE0FEAF07C869F893D6 /* EditorSession.swift in Sources */,
+				D356DFABB4AE2A5E4D4A1E43 /* EditorView.swift in Sources */,
+				CE128AF9C64D4FCED6B862B4 /* Exporter.swift in Sources */,
+				0DDC81535794AD725A2B22EF /* Fonts.swift in Sources */,
+				3BC5FA789655C8CED5FF1F33 /* Hotkeys.swift in Sources */,
+				FB2A08CEB07AF26005DF65F3 /* Library.swift in Sources */,
+				26079007E0E59B833D6B77C3 /* MainMenu.swift in Sources */,
+				435B2DC702BF8EE5CE00768D /* MainView.swift in Sources */,
+				01C115171DC8F649B0CC8F44 /* MainWindowController.swift in Sources */,
+				5C0F9A84315F0D8B07E2426C /* MarkdownEditing.swift in Sources */,
+				1CC1C3330F9722C7CF0821E7 /* MarkdownRenderer.swift in Sources */,
+				0C51BEC946A1921C5BF57540 /* MarkdownStyler.swift in Sources */,
+				B14EE8203D7AA37570876EC1 /* Prefs.swift in Sources */,
+				B0259D6ED9E5445CBB79F468 /* PreviewStyle.swift in Sources */,
+				843DC64971B9F1629CE60173 /* PreviewView.swift in Sources */,
+				93AAB6B247B4A84001BA66A4 /* QuickPadController.swift in Sources */,
+				7F05B12742707CAB85004736 /* QuickPadView.swift in Sources */,
+				A0A597830718BCDA4BDBA2F8 /* Runtime.swift in Sources */,
+				60A9A7839B0B826A51211D8C /* SettingsViews.swift in Sources */,
+				1F60CAC6AE9BAB942E200D65 /* SettingsWindowController.swift in Sources */,
+				20136638CB02E7218522E81D /* SidebarView.swift in Sources */,
+				AFEF5E8BFC3745F6E9A1C281 /* StatusItemController.swift in Sources */,
+				D4F593BAC72F78DE77BD624E /* TemplatePicker.swift in Sources */,
+				21EED77FAF70B75130203849 /* Templates.swift in Sources */,
+				B3DDEF81611CCB62FBDF6CF2 /* Theme.swift in Sources */,
+				C78DE23E762A7EDB3A09F618 /* UpdateWindow.swift in Sources */,
+				9A98C875EE89AFBC96C06A5E /* Updater.swift in Sources */,
+				9E314DB5157C5796D27808A1 /* ZenTextView.swift in Sources */,
+				C05464136237FC30F54AA8E2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +441,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -409,10 +489,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -427,15 +510,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 2.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -444,6 +529,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -491,10 +577,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -503,14 +592,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 2.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.9;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -528,8 +619,8 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.app;
+				PRODUCT_NAME = ZenPad;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -547,8 +638,8 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zenpad.app;
+				PRODUCT_NAME = ZenPad;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -583,6 +674,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C13B064385174985FE0FB1D6 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-markdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E3D6832AD154A3ADA053E5F /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C13B064385174985FE0FB1D6 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 897F7B4A47217D842D31E795 /* Project object */;
 }

@@ -1,319 +1,254 @@
-# ZenPad
-
 <div align="center">
 
-![Platform](https://img.shields.io/badge/platform-macOS%2013.0%2B-blue)
-![Swift](https://img.shields.io/badge/Swift-5.9-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
-![GitHub Stars](https://img.shields.io/github/stars/pronzzz/zenpad?style=social)
+<img src="docs/art/icon-1024.png" width="128" alt="ZenPad icon">
 
-**An AI-First macOS Text Editor Built for Writers and Developers**
+# ZenPad
 
-*Distraction-free writing meets powerful development tools with privacy-first local AI*
+**A quiet Markdown notepad that lives in your Mac's menu bar.**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Documentation](USER_GUIDE.md) • [License](#-license)
+Press a shortcut, write, close. Your notes are plain Markdown files you own.
+
+[![Release](https://img.shields.io/github/v/release/pronzzz/zenpad?label=release&color=3C7DFF)](https://github.com/pronzzz/zenpad/releases/latest)
+![macOS 14+](https://img.shields.io/badge/macOS-14%2B-111?logo=apple)
+![Universal](https://img.shields.io/badge/Apple%20silicon%20%2B%20Intel-universal-555)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2EA44F)](LICENSE)
+
+[**Download ZenPad 2.0**](https://github.com/pronzzz/zenpad/releases/latest) · [What's new](CHANGELOG.md) · [Shortcuts](#keyboard-shortcuts) · [Build from source](#building-from-source)
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/editor-dark.png">
+  <img src="docs/screenshots/editor-light.png" width="860" alt="The ZenPad editor with a notes sidebar and a styled Markdown note">
+</picture>
 
 </div>
 
----
+## Why ZenPad
 
-## 📖 Overview
+- **Always one keystroke away.** `⌃⌥N` drops a small Quick Pad under the menu bar icon from any app. No Dock icon, no window to manage.
+- **Markdown that looks like writing.** Headings, emphasis, links, tasks, quotes and code are styled as you type, while the syntax stays visible and quiet.
+- **Your files, your folder.** Every note is a `.md` file in a folder you choose. Open them in any other editor, back them up, or keep them in iCloud Drive.
+- **Calm by design.** One window, a translucent sidebar, a header that fades away in Focus Mode, and gentle spring animations.
+- **Private.** No accounts, no analytics. The optional writing assistant runs on your Mac with Ollama.
+- **Updates itself.** New releases arrive from this repository, verified with a cryptographic signature before they're installed.
 
-ZenPad is a modern, native macOS text editor that combines the simplicity of distraction-free writing with powerful developer tools and local-first AI assistance. Built with **SwiftUI** and **AppKit**, it delivers a fast, native experience while keeping your data private through local AI processing via **Ollama**.
+## A tour
 
-### Why ZenPad?
+### Quick Pad
 
-- **🔒 Privacy-First**: All AI processing happens locally on your Mac - your data never leaves your device
-- **⚡️ Blazing Fast**: Native SwiftUI/AppKit architecture with <200ms launch time
-- **🎨 Distraction-Free**: Clean, minimal interface that gets out of your way
-- **💻 Developer-Ready**: Full syntax highlighting and code editing capabilities when you need them
-- **🍎 macOS Native**: Deep integration with iCloud, Handoff, Quick Note, and more
+Click the ensō in the menu bar, or press `⌃⌥N` anywhere. Jot something down, press `⌘↩` to save it as a note, or expand it into the full editor. The scratch text is kept between sessions, and your recent notes are one click away.
 
----
+<p align="center">
+  <img src="docs/screenshots/quickpad.png" width="330" alt="Quick Pad in light mode">
+  &nbsp;
+  <img src="docs/screenshots/quickpad-dark.png" width="330" alt="Quick Pad in dark mode">
+</p>
 
-## ✨ Features
+### Write, Split, Preview
 
-### 🤖 Local AI Assistant
-Powered by **Ollama** for complete privacy - your data never leaves your device.
+Switch with `⌘1` `⌘2` `⌘3`. The preview renders GitHub Flavored Markdown (tables, task lists, footnotes, alerts and highlighted code), follows your scroll position, and updates in place without flickering. Tick a checkbox in the preview and the note updates.
 
-- **Rewrite**: Improve clarity, flow, and readability
-- **Summarize**: Generate concise summaries of long text
-- **Tone Adjustment**: Switch between Formal, Casual, or Concise styles
-- **Smart Suggestions**: Context-aware writing improvements
-- **Usage**: Click the ✨ icon or press `⇧⌘A`
+<p align="center">
+  <img src="docs/screenshots/split-dark.png" width="860" alt="Split view: the Markdown source on the left, the rendered preview on the right">
+</p>
 
-### 💻 Developer Mode
-A fully capable code editor when you need it.
+### Fonts that fit the moment
 
-- **Syntax Highlighting**: JSON, JavaScript, Python, Swift, HTML, CSS, Shell, YAML, Markdown
-- **Smart Tools**: Bracket matching, auto-close pairs, regex search
-- **Code Formatters**: JSON prettify, sort lines, trim whitespace
-- **Line Numbers**: Toggle-able line numbering
-- **Regex Search**: Powerful pattern matching
+New York, SF Pro, SF Pro Rounded and SF Mono, plus classic writing fonts that ship with macOS (Charter, Iowan Old Style, Palatino, Avenir Next and more). Size, line height and line width are adjustable; the preview uses the same font.
 
-### ⚡️ Power Tools
+<p align="center">
+  <img src="docs/screenshots/preview-light.png" width="860" alt="Preview mode rendered in SF Pro Rounded">
+</p>
 
-- **Templates**: Built-in templates for Meeting Notes, Blog Posts, Code Snippets, and more
-- **Text Snippets**: Reusable text blocks with variable support (`{DATE}`, `{TIME}`, `{CURSOR}`)
-- **Export Options**: 
-  - 📄 PDF with formatting preserved
-  - 🌐 HTML export
-  - 📤 Publish to GitHub Gist
-- **Version History**: Auto-save with time-machine-like version tracking
-- **Document Outline**: Navigate long documents with ease
+### Focus Mode
 
-### 🍎 macOS Integration
+`⇧⌘F` hides the sidebar and toolbar and dims every paragraph except the one you're writing. Move the mouse to the top to bring the header back; press `Esc` to leave. Typewriter scrolling keeps your line centred if you like that.
 
-- **iCloud Sync**: Access your documents across all your Apple devices
-- **Quick Note**: Menu bar app with global hotkey (`⌃⇧N`) to capture thoughts instantly
-- **Handoff**: Seamlessly switch between your Mac, iPad, and iPhone
-- **Services**: "Open in ZenPad" from any macOS application
-- **Spotlight Integration**: Find your documents instantly
-- **Dark/Light Mode**: Automatic appearance switching
-
-### 📝 Writing Features
-
-- **Focus Mode**: Distraction-free full-screen writing (`⌃⌘F`)
-- **Markdown Support**: Live preview with `⇧⌘P`
-- **Multiple Tabs**: Work on multiple documents simultaneously
-- **Split View**: Side-by-side editing (Horizontal: `⌃⌘D`, Vertical: `⌥⌘D`)
-- **Customizable Typography**: Font family, size, and line height settings
-- **Text Statistics**: Live word count, character count, reading time
-
----
-
-## 🚀 Installation
-
-### Requirements
-
-- **macOS**: 13.0 (Ventura) or later
-- **Xcode**: 15.0 or later (for building from source)
-- **Ollama**: Optional, for AI features ([Download](https://ollama.ai))
-
-### Build from Source
-
-#### Option 1: Using XcodeGen (Recommended)
-
-```bash
-# Install XcodeGen
-brew install xcodegen
-
-# Clone the repository
-git clone https://github.com/pronzzz/zenpad.git
-cd zenpad
-
-# Generate Xcode project
-xcodegen generate
-
-# Open and build
-open ZenPad.xcodeproj
-```
-
-Press **⌘R** in Xcode to build and run.
-
-#### Option 2: Using Swift Package Manager
-
-```bash
-# Clone the repository
-git clone https://github.com/pronzzz/zenpad.git
-cd zenpad
-
-# Build
-swift build
-
-# Run
-swift run
-```
-
-### Setting Up AI Features
-
-For AI assistant functionality, install and run Ollama:
-
-```bash
-# Install Ollama
-brew install ollama
-
-# Start the Ollama service
-ollama serve
-
-# Pull the recommended model
-ollama pull llama3.2
-```
-
----
-
-## 💡 Usage
-
-### Quick Start
-
-1. **Launch ZenPad** from Applications or Xcode
-2. Press **⌘N** to create a new document
-3. Start writing!
-
-### AI Assistant
-
-1. Select text you want to improve
-2. Press **⇧⌘A** or click the ✨ icon
-3. Choose an action: Rewrite, Summarize, or Change Tone
-4. Review and apply the suggestions
+<p align="center">
+  <img src="docs/screenshots/focus.png" width="860" alt="Focus Mode dimming all but the current paragraph">
+</p>
 
 ### Templates
 
-1. Press **⇧⌘N** for "New from Template"
-2. Choose from built-in templates
-3. Fill in the placeholders
+Start from a Daily Journal, Meeting Notes, To-do List, Blog Post, Project Plan or README. Placeholders like `{{date}}` and `{{weekday}}` are filled in for you, and any `.md` file you drop into the templates folder becomes a template.
 
-### Quick Note (Menu Bar)
+<p align="center">
+  <img src="docs/screenshots/templates.png" width="860" alt="The template picker">
+</p>
 
-1. Press **⌃⇧N** from anywhere in macOS
-2. Type your note
-3. It's automatically saved to iCloud
+### Settings
 
-For detailed usage instructions, see the [User Guide](USER_GUIDE.md).
+<p align="center">
+  <img src="docs/screenshots/settings-editor.png" width="400" alt="Editor settings: fonts, size, line height, line width">
+  &nbsp;
+  <img src="docs/screenshots/settings-shortcuts.png" width="400" alt="Shortcut settings with recordable global shortcuts">
+</p>
 
----
+## Features
 
-## ⌨️ Keyboard Shortcuts
+**Writing**
+- Live Markdown styling with visible-but-quiet syntax
+- Smart lists: Return continues bullets, numbers and tasks; Tab and Shift-Tab indent
+- Click `[ ]` to tick a task; `⌘`-click to open a link
+- Outline menu for jumping between headings
+- Find and Replace, word count, reading time
+- Writing Assistant with Ollama: improve, fix grammar, shorten, expand, summarize, continue, change tone, suggest titles, or ask anything
 
-| Action | Shortcut |
-|--------|----------|
-| New Document | `⌘N` |
-| New from Template | `⇧⌘N` |
-| Open | `⌘O` |
-| Save | `⌘S` |
-| Save As | `⇧⌘S` |
-| Close Tab | `⌘W` |
-| AI Assistant | `⇧⌘A` |
-| Focus Mode | `⌃⌘F` |
-| Markdown Preview | `⇧⌘P` |
-| Quick Note | `⌃⇧N` |
-| Split Horizontal | `⌃⌘D` |
-| Split Vertical | `⌥⌘D` |
-| Find | `⌘F` |
-| Find and Replace | `⌥⌘F` |
+**Markdown**
+- CommonMark plus GitHub extensions: tables with alignment, task lists, strikethrough, autolinks
+- Footnotes and `> [!NOTE]` / `[!TIP]` / `[!WARNING]` alerts
+- Syntax highlighting for Swift, Python, JavaScript/TypeScript, Go, Rust, C-family languages, Ruby, shell, SQL, JSON, YAML and CSS
+- Raw HTML is sanitized in the preview (no scripts or event handlers)
 
----
+**Notes**
+- Plain `.md` files in any folder you choose (default `~/Documents/ZenPad`)
+- File names follow each note's first line; saving is automatic
+- Changes made by other apps show up immediately
+- Open any `.md` or `.txt` file from Finder
+- Export to PDF or HTML, copy as HTML, print, share
 
-## 📂 Project Structure
+**App**
+- Menu bar app; the Dock icon only appears while the editor is open
+- Global shortcuts you can re-record
+- Opens to the Quick Pad, the editor, or stays in the menu bar; optional launch at login
+- Light, dark or automatic appearance
+- Signed automatic updates from GitHub Releases
+- Universal: Apple silicon and Intel
+
+## Installation
+
+1. Download **ZenPad-2.0.0.dmg** from the [latest release](https://github.com/pronzzz/zenpad/releases/latest).
+2. Open it and drag ZenPad into Applications.
+
+   <img src="docs/screenshots/dmg.png" width="520" alt="The ZenPad installer window">
+
+3. Open ZenPad from Applications. Because ZenPad isn't notarized by Apple, macOS will say it can't verify the developer the first time. Open **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**. You only need to do this once; updates install from inside the app.
+
+ZenPad needs macOS 14 Sonoma or later.
+
+> [!TIP]
+> Prefer the terminal? After dragging the app to Applications you can clear the quarantine flag yourself:
+> `xattr -dr com.apple.quarantine /Applications/ZenPad.app`
+
+### Updating
+
+ZenPad checks for a new release once a day (turn this off in Settings → Updates, or check by hand from the menu bar icon). When one is available you'll see the release notes and an **Install and Relaunch** button.
+
+<p align="center">
+  <img src="docs/screenshots/update.png" width="440" alt="The update window showing release notes">
+</p>
+
+How it stays safe: each release ships `ZenPad-<version>.zip` alongside an Ed25519 signature (`.zip.sig`). The app verifies the signature against the public key built into it, checks the bundle identifier, version and code signature of the downloaded app, and only then swaps it in. If anything doesn't match, nothing is replaced.
+
+## Keyboard shortcuts
+
+| Anywhere on your Mac | |
+| --- | --- |
+| Show / hide the Quick Pad | `⌃⌥N` |
+| Open the editor | `⌃⌥Z` |
+
+| In ZenPad | |
+| --- | --- |
+| New note / from template | `⌘N` / `⇧⌘N` |
+| Write / Split / Preview | `⌘1` `⌘2` `⌘3` |
+| Focus Mode | `⇧⌘F` |
+| Toggle sidebar | `⌃⌘S` |
+| Search all notes | `⇧⌘L` |
+| Writing Assistant | `⇧⌘A` |
+| Bold / Italic | `⌘B` / `⌘I` |
+| Link / Inline code | `⌘K` / `⇧⌘K` |
+| Heading 1–3 | `⌥⌘1` – `⌥⌘3` |
+| Toggle task | `⇧⌘T` |
+| Code block | `⌥⌘C` |
+| Find / Find and Replace | `⌘F` / `⌥⌘F` |
+| Bigger / Smaller / Actual size | `⌘+` / `⌘-` / `⌘0` |
+| Typewriter scrolling | `⌃⌘T` |
+| Save Quick Pad as a note | `⌘↩` |
+
+The two global shortcuts can be changed in Settings → Shortcuts.
+
+## Writing Assistant (optional)
+
+The assistant uses [Ollama](https://ollama.com), so everything runs on your Mac and nothing is sent anywhere.
+
+```bash
+brew install ollama
+```
+
+```bash
+ollama pull llama3.2
+```
+
+Start Ollama, then press `⇧⌘A` in ZenPad. Pick a different model or server address in Settings → Assistant. The assistant works on your selection, or on the whole note when nothing is selected.
+
+## Syncing between Macs
+
+ZenPad doesn't run its own sync. Choose a folder inside iCloud Drive (or Dropbox, Syncthing, a Git repo…) in Settings → General → Notes folder, and point ZenPad at the same folder on your other Mac.
+
+## Building from source
+
+Requirements: Xcode 26 or later and [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+
+```bash
+brew install xcodegen
+```
+
+```bash
+git clone https://github.com/pronzzz/zenpad.git && cd zenpad && xcodegen generate && open ZenPad.xcodeproj
+```
+
+`project.yml` is the source of truth for the Xcode project; regenerate after adding files. Run the tests with `⌘U` or:
+
+```bash
+xcodebuild -project ZenPad.xcodeproj -scheme ZenPad test
+```
+
+### Project layout
 
 ```
 ZenPad/
-├── ZenPad/
-│   ├── App/
-│   │   ├── ZenPadApp.swift          # App entry point
-│   │   └── AppDelegate.swift        # AppKit integration
-│   ├── Views/
-│   │   ├── ContentView.swift        # Main layout
-│   │   ├── EditorView.swift         # NSTextView wrapper
-│   │   ├── AIAssistantPanel.swift   # AI interface
-│   │   ├── CodeEditorView.swift     # Syntax highlighting
-│   │   ├── MarkdownPreviewView.swift
-│   │   ├── TabBarView.swift         # Document tabs
-│   │   ├── StatusBarView.swift      # Statistics display
-│   │   ├── MenuBarController.swift  # Quick Note menu bar
-│   │   ├── PreferencesView.swift
-│   │   ├── FocusModeView.swift
-│   │   └── SearchBarView.swift
-│   ├── Models/
-│   │   ├── Document.swift           # Document model
-│   │   └── DocumentManager.swift    # Document state management
-│   ├── Services/
-│   │   ├── AIService.swift          # Ollama integration
-│   │   ├── AutoSaveService.swift    # Auto-save & versions
-│   │   ├── CloudSyncService.swift   # iCloud integration
-│   │   ├── FileService.swift        # File operations
-│   │   ├── ExportService.swift      # PDF/HTML/Gist export
-│   │   ├── TemplateManager.swift    # Document templates
-│   │   ├── SnippetManager.swift     # Text snippets
-│   │   ├── SyntaxHighlighter.swift  # Code highlighting
-│   │   ├── SpotlightService.swift   # Search integration
-│   │   └── SystemIntegration.swift  # Handoff & Services
-│   ├── Utilities/
-│   │   ├── TextStatistics.swift     # Word/char count
-│   │   └── Preferences.swift        # User preferences
-│   └── Resources/
-│       ├── Assets.xcassets          # App icons & assets
-│       └── ZenPad.entitlements      # App capabilities
-├── ZenPadTests/
-├── Package.swift                     # SPM manifest
-├── project.yml                       # XcodeGen config
-├── README.md
-├── USER_GUIDE.md
-├── TROUBLESHOOTING.md
-└── LICENSE
+  App/          entry point, menu bar item, main menu, editor window, demo scenes
+  Core/         preferences, fonts, theme, notes library, editing session, hotkeys
+  Editor/       the TextKit writing surface and the WebKit preview
+  Markdown/     swift-markdown → HTML renderer, live styler, editing commands, highlighter
+  Services/     templates, Ollama assistant, export, GitHub updater
+  Views/        SwiftUI: main window, sidebar, Quick Pad, settings, update window
+ZenPadTests/    renderer, editing, library, updater and styler tests
+scripts/        release, screenshots, artwork and update-key tools
 ```
 
----
+### Releasing
 
-## 🛠 Technologies
+```bash
+scripts/release.sh --publish
+```
 
-- **SwiftUI**: Modern declarative UI framework
-- **AppKit**: Native macOS text handling (NSTextView)
-- **CloudKit**: iCloud synchronization
-- **Ollama**: Local AI inference
-- **XcodeGen**: Project generation
-- **Swift Package Manager**: Dependency management
+This builds a universal Release, runs the tests, creates `dist/ZenPad-<version>.dmg`, the update zip and its signature, and publishes the GitHub release with the matching section of [CHANGELOG.md](CHANGELOG.md) as notes. Pushing a `v*` tag runs the same script in GitHub Actions ([release.yml](.github/workflows/release.yml)), which needs the `ZENPAD_UPDATE_PRIVATE_KEY` repository secret.
 
----
+The update signing key is created once with `swift scripts/update_keys.swift generate` and stored outside the repository in `~/.config/zenpad/update_signing_key`. Its public half is in `ZenPad/Resources/Info.plist` (`ZPUpdatePublicKey`).
 
-## 🤝 Contributing
+Other scripts:
 
-Contributions are welcome! Here's how you can help:
+- `scripts/screenshots.sh` renders every screenshot in this README using the app's demo mode (sample notes in a temporary folder; your own notes and settings are never touched).
+- `swift scripts/make_art.swift` draws the app icon and DMG background.
 
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
+## Troubleshooting
 
-### Development Guidelines
+**"ZenPad can't be opened because Apple cannot check it for malicious software."** See step 3 of [Installation](#installation).
 
-- Follow Swift style conventions
-- Add tests for new features
-- Update documentation as needed
-- Ensure builds succeed before submitting PR
+**The global shortcut does nothing.** Another app may already use that combination. Record a different one in Settings → Shortcuts.
 
----
+**I can't see the menu bar icon.** On crowded menu bars macOS hides icons behind the notch. Use `⌃⌥N` / `⌃⌥Z`, or hold `⌘` and drag other icons to make room.
 
-## 🐛 Troubleshooting
+**The assistant says it's offline.** Make sure Ollama is running (`ollama serve`) and the model in Settings → Assistant has been pulled.
 
-Having issues? Check the [Troubleshooting Guide](TROUBLESHOOTING.md) or [open an issue](https://github.com/pronzzz/zenpad/issues).
+**Where are my notes?** In the folder shown at the bottom of the sidebar. Right-click a note and choose **Show in Finder**.
 
-Common issues:
-- **AI not working?** Ensure Ollama is running: `ollama serve`
-- **Build errors?** Try cleaning: `xcodegen generate && rm -rf DerivedData/`
-- **iCloud sync issues?** Check Settings > Apple ID > iCloud > iCloud Drive
+## Privacy
 
----
+ZenPad makes exactly two kinds of network request: a daily check of this repository's GitHub releases (which you can turn off), and, if you use the assistant, requests to your own Ollama server (localhost by default). There is no telemetry.
 
-## 📄 License
+## License
 
-MIT License
-
-Copyright (c) 2026 Pranav Dwivedi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-See [LICENSE](LICENSE) for full details.
-
----
-
-## 🙏 Acknowledgments
-
-- Built with [Ollama](https://ollama.ai) for privacy-first AI
-- Inspired by the simplicity of great macOS apps
-- Created with ❤️ by [Pranav Dwivedi](https://github.com/pronzzz)
-
----
-
-<div align="center">
-
-**[⬆ Back to Top](#zenpad)**
-
-*ZenPad v1.0 - Your thoughts, your way.*
-
-</div>
+[MIT](LICENSE) © Pranav Dwivedi

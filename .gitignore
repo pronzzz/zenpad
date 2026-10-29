@@ -32,3 +32,6 @@ Package.resolved
 # Temporary files
 *.tmp
 *.temp
+
+# Release output
+dist/
